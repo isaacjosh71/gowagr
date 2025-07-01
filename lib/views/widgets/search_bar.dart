@@ -70,7 +70,7 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
               });
               widget.onSearch('');
               context.read<EventsCubit>().searchEvents('');
-              widget.onClear?.call(); // 👈 Notify parent
+              widget.onClear?.call();
             },
             icon: Icon(
               Icons.clear,
